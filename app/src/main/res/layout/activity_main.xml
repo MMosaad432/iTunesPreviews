@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context=".ui.main.view.MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tracksRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:listitem="@layout/tracks_list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ProgressBar
+        android:id="@+id/tracksProgressBar"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/errorPageImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
